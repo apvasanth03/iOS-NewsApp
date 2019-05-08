@@ -1,14 +1,14 @@
 //
-//  NewsArticle.swift
-//  Domain
+//  NewsArticleEntity.swift
+//  Data
 //
-//  Created by Vasanthakumar Annadurai on 06/05/19.
+//  Created by Vasanthakumar Annadurai on 08/05/19.
 //  Copyright © 2019 Vasanthakumar Annadurai. All rights reserved.
 //
 
 import Foundation
 
-public struct NewsArticle {
+public struct NewsArticleEntity{
     let title: String
     let description: String
     let author: String?

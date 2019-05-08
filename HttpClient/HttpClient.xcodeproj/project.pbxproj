@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3B8F5E9228193AB0007C564 /* HttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B8F5E7228193AB0007C564 /* HttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3B8F5F2228194380007C564 /* HttpClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8F5F1228194380007C564 /* HttpClientError.swift */; };
 		C3B8F5F42281949F0007C564 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8F5F32281949F0007C564 /* HttpClient.swift */; };
 		C3B8F5F722819A2A0007C564 /* UrlSessionHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8F5F622819A2A0007C564 /* UrlSessionHttpClient.swift */; };
@@ -16,7 +15,6 @@
 
 /* Begin PBXFileReference section */
 		C3B8F5E4228193AB0007C564 /* HttpClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3B8F5E7228193AB0007C564 /* HttpClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
 		C3B8F5E8228193AB0007C564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B8F5F1228194380007C564 /* HttpClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientError.swift; sourceTree = "<group>"; };
 		C3B8F5F32281949F0007C564 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
@@ -55,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				C3B8F5EF228193E60007C564 /* Source */,
-				C3B8F5E7228193AB0007C564 /* HttpClient.h */,
 				C3B8F5E8228193AB0007C564 /* Info.plist */,
 			);
 			path = HttpClient;
@@ -95,7 +92,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B8F5E9228193AB0007C564 /* HttpClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -287,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

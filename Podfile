@@ -23,3 +23,15 @@ target 'Domain' do
     commonPods
 end
 
+# Data
+target 'Data' do
+    project 'Data/Data.xcodeproj'
+    commonPods
+end
+
+# Remote
+target 'Remote' do
+    project 'Remote/Remote.xcodeproj'
+    commonPods
+end
+

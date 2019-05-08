@@ -18,7 +18,7 @@ public class GetNewsArticlesUseCase {
     private let newsArticlesRepository: NewsArticlesRepository
     
     // MARK: - Init.
-    init(newsArticlesRepository: NewsArticlesRepository) {
+    public init(newsArticlesRepository: NewsArticlesRepository) {
         self.newsArticlesRepository = newsArticlesRepository
     }
     

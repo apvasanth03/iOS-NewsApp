@@ -12,7 +12,7 @@ import Foundation
     HttpClient implementation using iOS UrlSession.
  */
 
-class UrlSessionHttpClient: HttpClient{
+public class UrlSessionHttpClient: HttpClient{
     
     // MARK: Properties.
     private let urlSession: URLSession
@@ -25,13 +25,13 @@ class UrlSessionHttpClient: HttpClient{
     }
     
     // MARK: HttpClient Methods.
-    func getRequest<T>(for urlString: String, with headers: [String : String], parseTo type: T.Type, successHandler: @escaping (T) -> Void, errorhandler: @escaping (HttpClientError) -> Void) where T : Decodable {
+    public func getRequest<T>(for urlString: String, with headers: [String : String]?, parseTo type: T.Type, successHandler: @escaping (T) -> Void, errorhandler: @escaping (HttpClientError) -> Void) where T : Decodable {
         // Check network connection.
         if Reachability.isConnectedToNetwork(){
             
             guard let url = URL(string: urlString) else{
                 errorhandler(.inValidUrlError)
-                return nil
+                return
             }
             
             let urlRequest: URLRequest = {

@@ -7,117 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96F6D4FF49C999237D1611F6 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA16151C52F59D13DA742ED /* Pods_Domain.framework */; };
-		C38AC8BA22806A4D0059EE5B /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AC8B922806A4D0059EE5B /* NewsArticle.swift */; };
-		C38AC8BE22806B550059EE5B /* NewsArticlesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AC8BD22806B550059EE5B /* NewsArticlesRepository.swift */; };
-		C38AC8C122806C930059EE5B /* GetNewsArticlesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AC8C022806C930059EE5B /* GetNewsArticlesUseCase.swift */; };
+		38E589C0ED6C7A98560F829B /* Pods_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C0C52B3149AFA1294D2E48 /* Pods_Remote.framework */; };
+		C3B626E82282BAC500392637 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B626E72282BAC500392637 /* Data.framework */; };
+		C3B627082282CF1C00392637 /* NewsArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B627072282CF1C00392637 /* NewsArticleModel.swift */; };
+		C3B6270A2282CF5C00392637 /* SourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B627092282CF5C00392637 /* SourceModel.swift */; };
+		C3B6270C2282CF7900392637 /* NewsArticleResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6270B2282CF7900392637 /* NewsArticleResponseModel.swift */; };
+		C3B6270F2282D01700392637 /* ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6270E2282D01700392637 /* ModelMapper.swift */; };
+		C3B627112282D08C00392637 /* NewsArticleModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B627102282D08C00392637 /* NewsArticleModelMapper.swift */; };
+		C3B627132282EE2000392637 /* HttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B627122282EE2000392637 /* HttpClient.framework */; };
+		C3B627152282EE4000392637 /* NewsArticleRemoteDataStoreImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B627142282EE4000392637 /* NewsArticleRemoteDataStoreImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1D6C1F8C9948879FD27D04B /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
-		AFA16151C52F59D13DA742ED /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C38AC8A6228060BF0059EE5B /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C38AC8AA228060BF0059EE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C38AC8B922806A4D0059EE5B /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
-		C38AC8BD22806B550059EE5B /* NewsArticlesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticlesRepository.swift; sourceTree = "<group>"; };
-		C38AC8C022806C930059EE5B /* GetNewsArticlesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsArticlesUseCase.swift; sourceTree = "<group>"; };
-		E7B467367D15CD7B0F34CEA1 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
+		15C0C52B3149AFA1294D2E48 /* Pods_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30CCE5F2282B6E8005552D7 /* Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30CCE632282B6E8005552D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B626E72282BAC500392637 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B627072282CF1C00392637 /* NewsArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleModel.swift; sourceTree = "<group>"; };
+		C3B627092282CF5C00392637 /* SourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModel.swift; sourceTree = "<group>"; };
+		C3B6270B2282CF7900392637 /* NewsArticleResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleResponseModel.swift; sourceTree = "<group>"; };
+		C3B6270E2282D01700392637 /* ModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMapper.swift; sourceTree = "<group>"; };
+		C3B627102282D08C00392637 /* NewsArticleModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleModelMapper.swift; sourceTree = "<group>"; };
+		C3B627122282EE2000392637 /* HttpClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HttpClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B627142282EE4000392637 /* NewsArticleRemoteDataStoreImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleRemoteDataStoreImpl.swift; sourceTree = "<group>"; };
+		D63F58A6396CB13898592B31 /* Pods-Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Remote/Pods-Remote.release.xcconfig"; sourceTree = "<group>"; };
+		D8A58905715EA7F778186518 /* Pods-Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Remote/Pods-Remote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C38AC8A3228060BF0059EE5B /* Frameworks */ = {
+		C30CCE5C2282B6E8005552D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96F6D4FF49C999237D1611F6 /* Pods_Domain.framework in Frameworks */,
+				C3B627132282EE2000392637 /* HttpClient.framework in Frameworks */,
+				C3B626E82282BAC500392637 /* Data.framework in Frameworks */,
+				38E589C0ED6C7A98560F829B /* Pods_Remote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A9602A335CBACD3DEB19AB5B /* Frameworks */ = {
+		09CE3558CF126DB01F6E47E1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AFA16151C52F59D13DA742ED /* Pods_Domain.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BEF95C397BD8BEB400EFD471 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E7B467367D15CD7B0F34CEA1 /* Pods-Domain.debug.xcconfig */,
-				A1D6C1F8C9948879FD27D04B /* Pods-Domain.release.xcconfig */,
+				D8A58905715EA7F778186518 /* Pods-Remote.debug.xcconfig */,
+				D63F58A6396CB13898592B31 /* Pods-Remote.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C38AC89C228060BF0059EE5B = {
+		C30CCE552282B6E8005552D7 = {
 			isa = PBXGroup;
 			children = (
-				C38AC8A8228060BF0059EE5B /* Domain */,
-				C38AC8A7228060BF0059EE5B /* Products */,
-				BEF95C397BD8BEB400EFD471 /* Pods */,
-				A9602A335CBACD3DEB19AB5B /* Frameworks */,
+				C30CCE612282B6E8005552D7 /* Remote */,
+				C30CCE602282B6E8005552D7 /* Products */,
+				09CE3558CF126DB01F6E47E1 /* Pods */,
+				C3E5E3F9D745FD1DCFB8188E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		C38AC8A7228060BF0059EE5B /* Products */ = {
+		C30CCE602282B6E8005552D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C38AC8A6228060BF0059EE5B /* Domain.framework */,
+				C30CCE5F2282B6E8005552D7 /* Remote.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C38AC8A8228060BF0059EE5B /* Domain */ = {
+		C30CCE612282B6E8005552D7 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				C38AC8B7228069530059EE5B /* Source */,
-				C38AC8AA228060BF0059EE5B /* Info.plist */,
+				C30CCE6A2282B70F005552D7 /* Source */,
+				C30CCE632282B6E8005552D7 /* Info.plist */,
 			);
-			path = Domain;
+			path = Remote;
 			sourceTree = "<group>";
 		};
-		C38AC8B7228069530059EE5B /* Source */ = {
+		C30CCE6A2282B70F005552D7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C38AC8BB22806B100059EE5B /* Model */,
-				C38AC8BC22806B260059EE5B /* Repository */,
-				C38AC8BF22806C7D0059EE5B /* UseCase */,
+				C3B627062282CEFF00392637 /* Model */,
+				C3B6270D2282CFDD00392637 /* Mapper */,
+				C3B627142282EE4000392637 /* NewsArticleRemoteDataStoreImpl.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		C38AC8BB22806B100059EE5B /* Model */ = {
+		C3B627062282CEFF00392637 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C38AC8B922806A4D0059EE5B /* NewsArticle.swift */,
+				C3B627072282CF1C00392637 /* NewsArticleModel.swift */,
+				C3B627092282CF5C00392637 /* SourceModel.swift */,
+				C3B6270B2282CF7900392637 /* NewsArticleResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C38AC8BC22806B260059EE5B /* Repository */ = {
+		C3B6270D2282CFDD00392637 /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
-				C38AC8BD22806B550059EE5B /* NewsArticlesRepository.swift */,
+				C3B6270E2282D01700392637 /* ModelMapper.swift */,
+				C3B627102282D08C00392637 /* NewsArticleModelMapper.swift */,
 			);
-			path = Repository;
+			path = Mapper;
 			sourceTree = "<group>";
 		};
-		C38AC8BF22806C7D0059EE5B /* UseCase */ = {
+		C3E5E3F9D745FD1DCFB8188E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C38AC8C022806C930059EE5B /* GetNewsArticlesUseCase.swift */,
+				C3B627122282EE2000392637 /* HttpClient.framework */,
+				C3B626E72282BAC500392637 /* Data.framework */,
+				15C0C52B3149AFA1294D2E48 /* Pods_Remote.framework */,
 			);
-			path = UseCase;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C38AC8A1228060BF0059EE5B /* Headers */ = {
+		C30CCE5A2282B6E8005552D7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -127,59 +136,59 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C38AC8A5228060BF0059EE5B /* Domain */ = {
+		C30CCE5E2282B6E8005552D7 /* Remote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C38AC8AE228060BF0059EE5B /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildConfigurationList = C30CCE672282B6E8005552D7 /* Build configuration list for PBXNativeTarget "Remote" */;
 			buildPhases = (
-				C8048E55D4DB880C72B73946 /* [CP] Check Pods Manifest.lock */,
-				C38AC8A1228060BF0059EE5B /* Headers */,
-				C38AC8A2228060BF0059EE5B /* Sources */,
-				C38AC8A3228060BF0059EE5B /* Frameworks */,
-				C38AC8A4228060BF0059EE5B /* Resources */,
+				C37DD95ED2872E1C36490DCC /* [CP] Check Pods Manifest.lock */,
+				C30CCE5A2282B6E8005552D7 /* Headers */,
+				C30CCE5B2282B6E8005552D7 /* Sources */,
+				C30CCE5C2282B6E8005552D7 /* Frameworks */,
+				C30CCE5D2282B6E8005552D7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Domain;
-			productName = Domain;
-			productReference = C38AC8A6228060BF0059EE5B /* Domain.framework */;
+			name = Remote;
+			productName = Remote;
+			productReference = C30CCE5F2282B6E8005552D7 /* Remote.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C38AC89D228060BF0059EE5B /* Project object */ = {
+		C30CCE562282B6E8005552D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Vasanthakumar Annadurai";
 				TargetAttributes = {
-					C38AC8A5228060BF0059EE5B = {
+					C30CCE5E2282B6E8005552D7 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
 				};
 			};
-			buildConfigurationList = C38AC8A0228060BF0059EE5B /* Build configuration list for PBXProject "Domain" */;
+			buildConfigurationList = C30CCE592282B6E8005552D7 /* Build configuration list for PBXProject "Remote" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = C38AC89C228060BF0059EE5B;
-			productRefGroup = C38AC8A7228060BF0059EE5B /* Products */;
+			mainGroup = C30CCE552282B6E8005552D7;
+			productRefGroup = C30CCE602282B6E8005552D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C38AC8A5228060BF0059EE5B /* Domain */,
+				C30CCE5E2282B6E8005552D7 /* Remote */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C38AC8A4228060BF0059EE5B /* Resources */ = {
+		C30CCE5D2282B6E8005552D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,7 +198,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C8048E55D4DB880C72B73946 /* [CP] Check Pods Manifest.lock */ = {
+		C37DD95ED2872E1C36490DCC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,7 +213,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Domain-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Remote-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -214,20 +223,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C38AC8A2228060BF0059EE5B /* Sources */ = {
+		C30CCE5B2282B6E8005552D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C38AC8BA22806A4D0059EE5B /* NewsArticle.swift in Sources */,
-				C38AC8C122806C930059EE5B /* GetNewsArticlesUseCase.swift in Sources */,
-				C38AC8BE22806B550059EE5B /* NewsArticlesRepository.swift in Sources */,
+				C3B6270A2282CF5C00392637 /* SourceModel.swift in Sources */,
+				C3B627152282EE4000392637 /* NewsArticleRemoteDataStoreImpl.swift in Sources */,
+				C3B627112282D08C00392637 /* NewsArticleModelMapper.swift in Sources */,
+				C3B6270C2282CF7900392637 /* NewsArticleResponseModel.swift in Sources */,
+				C3B6270F2282D01700392637 /* ModelMapper.swift in Sources */,
+				C3B627082282CF1C00392637 /* NewsArticleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C38AC8AC228060BF0059EE5B /* Debug */ = {
+		C30CCE652282B6E8005552D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,7 +303,7 @@
 			};
 			name = Debug;
 		};
-		C38AC8AD228060BF0059EE5B /* Release */ = {
+		C30CCE662282B6E8005552D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -349,9 +361,9 @@
 			};
 			name = Release;
 		};
-		C38AC8AF228060BF0059EE5B /* Debug */ = {
+		C30CCE682282B6E8005552D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7B467367D15CD7B0F34CEA1 /* Pods-Domain.debug.xcconfig */;
+			baseConfigurationReference = D8A58905715EA7F778186518 /* Pods-Remote.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -361,15 +373,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Domain/Info.plist";
+				INFOPLIST_FILE = Remote/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vasanth.Domain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vasanth.Remote;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -378,9 +389,9 @@
 			};
 			name = Debug;
 		};
-		C38AC8B0228060BF0059EE5B /* Release */ = {
+		C30CCE692282B6E8005552D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1D6C1F8C9948879FD27D04B /* Pods-Domain.release.xcconfig */;
+			baseConfigurationReference = D63F58A6396CB13898592B31 /* Pods-Remote.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -390,15 +401,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Domain/Info.plist";
+				INFOPLIST_FILE = Remote/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vasanth.Domain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vasanth.Remote;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -409,25 +419,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C38AC8A0228060BF0059EE5B /* Build configuration list for PBXProject "Domain" */ = {
+		C30CCE592282B6E8005552D7 /* Build configuration list for PBXProject "Remote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C38AC8AC228060BF0059EE5B /* Debug */,
-				C38AC8AD228060BF0059EE5B /* Release */,
+				C30CCE652282B6E8005552D7 /* Debug */,
+				C30CCE662282B6E8005552D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C38AC8AE228060BF0059EE5B /* Build configuration list for PBXNativeTarget "Domain" */ = {
+		C30CCE672282B6E8005552D7 /* Build configuration list for PBXNativeTarget "Remote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C38AC8AF228060BF0059EE5B /* Debug */,
-				C38AC8B0228060BF0059EE5B /* Release */,
+				C30CCE682282B6E8005552D7 /* Debug */,
+				C30CCE692282B6E8005552D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C38AC89D228060BF0059EE5B /* Project object */;
+	rootObject = C30CCE562282B6E8005552D7 /* Project object */;
 }

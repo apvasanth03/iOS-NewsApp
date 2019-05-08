@@ -13,8 +13,14 @@
 		C38AC89022805CD70059EE5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38AC88E22805CD70059EE5B /* Main.storyboard */; };
 		C38AC89222805CD90059EE5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38AC89122805CD90059EE5B /* Assets.xcassets */; };
 		C38AC89522805CD90059EE5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38AC89322805CD90059EE5B /* LaunchScreen.storyboard */; };
-		C38AC8B22280611F0059EE5B /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38AC8B12280611F0059EE5B /* Domain.framework */; };
-		C38AC8B32280611F0059EE5B /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C38AC8B12280611F0059EE5B /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3B626FB2282BC6D00392637 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B626FA2282BC6D00392637 /* Domain.framework */; };
+		C3B626FC2282BC6D00392637 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3B626FA2282BC6D00392637 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3B626FE2282BC6D00392637 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B626FD2282BC6D00392637 /* Data.framework */; };
+		C3B626FF2282BC6D00392637 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3B626FD2282BC6D00392637 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3B627012282BC6D00392637 /* Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B627002282BC6D00392637 /* Remote.framework */; };
+		C3B627022282BC6D00392637 /* Remote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3B627002282BC6D00392637 /* Remote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3B627042282BC6D00392637 /* HttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B627032282BC6D00392637 /* HttpClient.framework */; };
+		C3B627052282BC6D00392637 /* HttpClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3B627032282BC6D00392637 /* HttpClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +30,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C38AC8B32280611F0059EE5B /* Domain.framework in Embed Frameworks */,
+				C3B626FF2282BC6D00392637 /* Data.framework in Embed Frameworks */,
+				C3B627022282BC6D00392637 /* Remote.framework in Embed Frameworks */,
+				C3B626FC2282BC6D00392637 /* Domain.framework in Embed Frameworks */,
+				C3B627052282BC6D00392637 /* HttpClient.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +49,10 @@
 		C38AC89122805CD90059EE5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38AC89422805CD90059EE5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C38AC89622805CD90059EE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C38AC8B12280611F0059EE5B /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B626FA2282BC6D00392637 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B626FD2282BC6D00392637 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B627002282BC6D00392637 /* Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B627032282BC6D00392637 /* HttpClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HttpClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E355EA9A65684CD700EFB1F0 /* Pods-NewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp.release.xcconfig"; sourceTree = "<group>"; };
 		FEE2E5EA6BC07ABDDBA464B1 /* Pods_NewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -50,7 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C38AC8B22280611F0059EE5B /* Domain.framework in Frameworks */,
+				C3B627042282BC6D00392637 /* HttpClient.framework in Frameworks */,
+				C3B627012282BC6D00392637 /* Remote.framework in Frameworks */,
+				C3B626FE2282BC6D00392637 /* Data.framework in Frameworks */,
+				C3B626FB2282BC6D00392637 /* Domain.framework in Frameworks */,
 				99643B16EE15D5749E6A9C26 /* Pods_NewsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +84,10 @@
 		C38AC87E22805CD70059EE5B = {
 			isa = PBXGroup;
 			children = (
-				C38AC8B5228061410059EE5B /* Framework */,
+				C3B627032282BC6D00392637 /* HttpClient.framework */,
+				C3B627002282BC6D00392637 /* Remote.framework */,
+				C3B626FD2282BC6D00392637 /* Data.framework */,
+				C3B626FA2282BC6D00392637 /* Domain.framework */,
 				C38AC88922805CD70059EE5B /* NewsApp */,
 				C38AC88822805CD70059EE5B /* Products */,
 				FC37DBA550704268BD38EC58 /* Pods */,
@@ -96,14 +114,6 @@
 				C38AC89622805CD90059EE5B /* Info.plist */,
 			);
 			path = NewsApp;
-			sourceTree = "<group>";
-		};
-		C38AC8B5228061410059EE5B /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				C38AC8B12280611F0059EE5B /* Domain.framework */,
-			);
-			path = Framework;
 			sourceTree = "<group>";
 		};
 		FC37DBA550704268BD38EC58 /* Pods */ = {

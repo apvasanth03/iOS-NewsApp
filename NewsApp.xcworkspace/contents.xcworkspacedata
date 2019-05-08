@@ -8,6 +8,12 @@
       location = "group:Domain/Domain.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Data/Data.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Remote/Remote.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:HttpClient/HttpClient.xcodeproj">
    </FileRef>
    <FileRef

@@ -18,7 +18,7 @@ import Foundation
  the third party HTTP client implementation.
 */
 
-protocol HttpClient{
+public protocol HttpClient{
     
     /**
      Used to make "HTTP GET REQUEST" & get response using completion handler.
@@ -31,7 +31,7 @@ protocol HttpClient{
         - errorhandler: Action to invoke upon error.
     */
     func getRequest<T:Decodable>(for urlString: String,
-                                 with headers: [String:String],
+                                 with headers: [String:String]?,
                                  parseTo type: T.Type,
                                  successHandler: @escaping (T)->Void,
                                  errorhandler: @escaping (HttpClientError)->Void)

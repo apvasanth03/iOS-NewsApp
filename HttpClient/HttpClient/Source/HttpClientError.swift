@@ -12,7 +12,7 @@ import Foundation
 /**
     A Enum defines all posibile exceptions from HttpClient.
  */
-enum HttpClientError: Error{
+public enum HttpClientError: Error{
     
     /// Indicates that no network to make Http request.
     case noNetworkError
