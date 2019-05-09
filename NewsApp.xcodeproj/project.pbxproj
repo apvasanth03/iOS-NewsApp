@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		99643B16EE15D5749E6A9C26 /* Pods_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE2E5EA6BC07ABDDBA464B1 /* Pods_NewsApp.framework */; };
+		C337916D2283FD9F00FF8597 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337916C2283FD9F00FF8597 /* Presentation.framework */; };
+		C337916E2283FD9F00FF8597 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C337916C2283FD9F00FF8597 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C38AC88B22805CD70059EE5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AC88A22805CD70059EE5B /* AppDelegate.swift */; };
 		C38AC88D22805CD70059EE5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AC88C22805CD70059EE5B /* ViewController.swift */; };
 		C38AC89022805CD70059EE5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38AC88E22805CD70059EE5B /* Main.storyboard */; };
@@ -33,6 +35,7 @@
 				C3B626FF2282BC6D00392637 /* Data.framework in Embed Frameworks */,
 				C3B627022282BC6D00392637 /* Remote.framework in Embed Frameworks */,
 				C3B626FC2282BC6D00392637 /* Domain.framework in Embed Frameworks */,
+				C337916E2283FD9F00FF8597 /* Presentation.framework in Embed Frameworks */,
 				C3B627052282BC6D00392637 /* HttpClient.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -42,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		7B0B88925F64814944DFADD1 /* Pods-NewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C337916C2283FD9F00FF8597 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38AC88722805CD70059EE5B /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38AC88A22805CD70059EE5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38AC88C22805CD70059EE5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			files = (
 				C3B627042282BC6D00392637 /* HttpClient.framework in Frameworks */,
 				C3B627012282BC6D00392637 /* Remote.framework in Frameworks */,
+				C337916D2283FD9F00FF8597 /* Presentation.framework in Frameworks */,
 				C3B626FE2282BC6D00392637 /* Data.framework in Frameworks */,
 				C3B626FB2282BC6D00392637 /* Domain.framework in Frameworks */,
 				99643B16EE15D5749E6A9C26 /* Pods_NewsApp.framework in Frameworks */,
@@ -84,6 +89,7 @@
 		C38AC87E22805CD70059EE5B = {
 			isa = PBXGroup;
 			children = (
+				C337916C2283FD9F00FF8597 /* Presentation.framework */,
 				C3B627032282BC6D00392637 /* HttpClient.framework */,
 				C3B627002282BC6D00392637 /* Remote.framework */,
 				C3B626FD2282BC6D00392637 /* Data.framework */,

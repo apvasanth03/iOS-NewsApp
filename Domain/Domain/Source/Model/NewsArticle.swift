@@ -9,13 +9,13 @@
 import Foundation
 
 public struct NewsArticle {
-    let title: String
-    let description: String
-    let author: String?
-    let source: String
-    let publishedAt: Date
-    let url: String
-    let urlToImage: String?
+    public let title: String
+    public let description: String
+    public let author: String?
+    public let source: String
+    public let publishedAt: Date
+    public let url: String
+    public let urlToImage: String?
     
     public init(title: String, description: String, author: String?,
                 source: String, publishedAt: Date, url: String, urlToImage: String?){

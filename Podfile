@@ -35,3 +35,9 @@ target 'Remote' do
     commonPods
 end
 
+# Presentation
+target 'Presentation' do
+    project 'Presentation/Presentation.xcodeproj'
+    commonPods
+end
+
