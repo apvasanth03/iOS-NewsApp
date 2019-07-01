@@ -15,6 +15,7 @@ import Data
 import Remote
 import Presentation
 import SafariServices
+import Swinject
 
 /**
  News List View Controller.
@@ -25,26 +26,17 @@ class NewsListViewController: UIViewController {
     @IBOutlet weak var tvNews: UITableView!
     @IBOutlet weak var aiProgress: UIActivityIndicatorView!
     
+    // Dependencies.
+    fileprivate var viewModel: NewsListViewModel!
+    
     fileprivate var errorView: ErrorView?
-    
-    fileprivate lazy var viewModel: NewsListViewModel = {
-        let httpClient = UrlSessionHttpClient()
-        let newsArticleModelMapper = NewsArticleModelMapper()
-        let newArticleRemoteDataSource = NewsArticleRemoteDataStoreImpl(httpClient: httpClient, mapper: newsArticleModelMapper)
-        let newsArticleEntityMapper = NewsArticleEntityMapper()
-        let newArticleRepository = NewsArticleDataRepository(remoteDataStore: newArticleRemoteDataSource, mapper: newsArticleEntityMapper)
-        let getNewsArticleUseCase = GetNewsArticlesUseCase(newsArticlesRepository: newArticleRepository)
-        let newsArticleUIMapper = NewsArticleUIMapper()
-        let viewModel = NewsListViewModel(getNewsArticleUseCase: getNewsArticleUseCase, mapper: newsArticleUIMapper)
-        return viewModel
-    }()
-    
     fileprivate let disposeBag = DisposeBag()
     
     // MARK: - UIViewController Methods.
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initializeDependencies()
         initializeViews()
         addListeners()
         setUpViewModelBindings()
@@ -53,6 +45,16 @@ class NewsListViewController: UIViewController {
     }
     
     // MARK: - Private Methods.
+    fileprivate func initializeDependencies(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        // Create child asembler - newsListAssembler - which can access all dependencies registerd in appAssembler.
+        let newsListAssembly = NewsListAssembly()
+        let newsListAssembler = Assembler([newsListAssembly], parent: appDelegate.appAssembler)
+        
+        self.viewModel = newsListAssembler.resolver.resolve(NewsListViewModel.self)!
+    }
+    
     fileprivate func initializeViews(){
         navigationController?.navigationBar.barTintColor = Color.theme.value
         navigationController?.navigationBar.tintColor = Color.background.value

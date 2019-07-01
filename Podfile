@@ -18,6 +18,8 @@ target 'NewsApp' do
     
     pod 'RxCocoa',    '~> 4.0'
     pod 'SDWebImage', '~> 5.0'
+    pod 'Swinject',   '~> 2.6'
+    
 end
 
 # Domain

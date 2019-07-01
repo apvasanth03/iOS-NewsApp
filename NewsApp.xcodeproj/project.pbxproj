@@ -31,6 +31,11 @@
 		C38AC89022805CD70059EE5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38AC88E22805CD70059EE5B /* Main.storyboard */; };
 		C38AC89222805CD90059EE5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38AC89122805CD90059EE5B /* Assets.xcassets */; };
 		C38AC89522805CD90059EE5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38AC89322805CD90059EE5B /* LaunchScreen.storyboard */; };
+		C3961FBF22CA268500514EC4 /* HttpClientAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3961FBE22CA268500514EC4 /* HttpClientAssembly.swift */; };
+		C3961FC122CA27E100514EC4 /* RemoteAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3961FC022CA27E100514EC4 /* RemoteAssembly.swift */; };
+		C3961FC322CA295400514EC4 /* DataAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3961FC222CA295400514EC4 /* DataAssembly.swift */; };
+		C3961FC522CA2AEB00514EC4 /* DomainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3961FC422CA2AEB00514EC4 /* DomainAssembly.swift */; };
+		C3961FC922CA2EC800514EC4 /* NewsListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3961FC822CA2EC800514EC4 /* NewsListAssembly.swift */; };
 		D2D31C88804304E702A158FA /* Pods_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F50FA847D3CB2BA6A030A5C /* Pods_NewsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +81,11 @@
 		C38AC89122805CD90059EE5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38AC89422805CD90059EE5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C38AC89622805CD90059EE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3961FBE22CA268500514EC4 /* HttpClientAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientAssembly.swift; sourceTree = "<group>"; };
+		C3961FC022CA27E100514EC4 /* RemoteAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAssembly.swift; sourceTree = "<group>"; };
+		C3961FC222CA295400514EC4 /* DataAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAssembly.swift; sourceTree = "<group>"; };
+		C3961FC422CA2AEB00514EC4 /* DomainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAssembly.swift; sourceTree = "<group>"; };
+		C3961FC822CA2EC800514EC4 /* NewsListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListAssembly.swift; sourceTree = "<group>"; };
 		E355EA9A65684CD700EFB1F0 /* Pods-NewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +140,7 @@
 		C352B7DA22C50F8F0039F2CB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C3961FBC22CA16B000514EC4 /* DI */,
 				C352B7DD22C512A80039F2CB /* App */,
 				C354913D22C3900C00E600A4 /* View */,
 				C352B7E122C5136B0039F2CB /* Util */,
@@ -229,6 +240,42 @@
 			path = NewsApp;
 			sourceTree = "<group>";
 		};
+		C3961FBC22CA16B000514EC4 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				C3961FBD22CA16B800514EC4 /* Assembly */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		C3961FBD22CA16B800514EC4 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				C3961FC622CA2EAD00514EC4 /* App */,
+				C3961FC722CA2EB700514EC4 /* News */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		C3961FC622CA2EAD00514EC4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C3961FBE22CA268500514EC4 /* HttpClientAssembly.swift */,
+				C3961FC022CA27E100514EC4 /* RemoteAssembly.swift */,
+				C3961FC222CA295400514EC4 /* DataAssembly.swift */,
+				C3961FC422CA2AEB00514EC4 /* DomainAssembly.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C3961FC722CA2EB700514EC4 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C3961FC822CA2EC800514EC4 /* NewsListAssembly.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		FC37DBA550704268BD38EC58 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +370,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -331,6 +379,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -369,8 +418,13 @@
 				C38AC88D22805CD70059EE5B /* NewsListViewController.swift in Sources */,
 				C352B7C222C4A10D0039F2CB /* ErrorView.swift in Sources */,
 				C376B92C22C6178F002343C6 /* Font.swift in Sources */,
+				C3961FC122CA27E100514EC4 /* RemoteAssembly.swift in Sources */,
 				C376B92822C61262002343C6 /* Color.swift in Sources */,
 				C352B7D722C509300039F2CB /* NewsTableViewCell.swift in Sources */,
+				C3961FBF22CA268500514EC4 /* HttpClientAssembly.swift in Sources */,
+				C3961FC522CA2AEB00514EC4 /* DomainAssembly.swift in Sources */,
+				C3961FC322CA295400514EC4 /* DataAssembly.swift in Sources */,
+				C3961FC922CA2EC800514EC4 /* NewsListAssembly.swift in Sources */,
 				C38AC88B22805CD70059EE5B /* AppDelegate.swift in Sources */,
 				C352B7E322C513C40039F2CB /* String+Helper.swift in Sources */,
 				C376B92522C6118B002343C6 /* UIColor+Helper.swift in Sources */,
