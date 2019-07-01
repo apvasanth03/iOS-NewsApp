@@ -19,7 +19,7 @@ public class UrlSessionHttpClient: HttpClient{
     private let jsonDecoder: JSONDecoder
     
     // MARK: Initializers.
-    init() {
+    public init() {
         urlSession = URLSession(configuration: .default)
         jsonDecoder = JSONDecoder()
     }

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  NewsApp
+
+  Created by Vasanthakumar Annadurai on 27/06/19.
+  Copyright © 2019 Vasanthakumar Annadurai. All rights reserved.
+*/
+
+// Common Strings
+"no_network_error_title" = "No Network";
+"no_network_error_message" = "Please check your connection and try again.";
+"unknown_error_title" = "Error";
+"unknown_error_message" = "Something isn\'t right, try refreshing the page or exit the app and try again.";
+
+// NewsList Screen.
+"news_article_list_title" = "Headlines";

@@ -21,7 +21,7 @@ public class NewsArticleRemoteDataStoreImpl: NewsArticleRemoteDataStore{
     private let mapper: NewsArticleModelMapper
     
     private let NEWS_API_KEY = "d6c6c7358b70483a8625ab5aef41d5f3"
-    private let GET_NEWS_ARTICLES_URL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=$NEWS_API_KEY"
+    private lazy var GET_NEWS_ARTICLES_URL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=\(NEWS_API_KEY)"
     
     // MARK: Initializer.
     public init(httpClient: HttpClient, mapper: NewsArticleModelMapper){

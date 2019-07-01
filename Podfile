@@ -15,6 +15,9 @@ end
 target 'NewsApp' do
     project 'NewsApp.xcodeproj'
     commonPods
+    
+    pod 'RxCocoa',    '~> 4.0'
+    pod 'SDWebImage', '~> 5.0'
 end
 
 # Domain

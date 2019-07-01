@@ -12,9 +12,8 @@ import Domain
 import HttpClient
 
 /**
-    ViewModel for our NewsList Screen.
+ ViewModel for our NewsList Screen.
  */
-
 public class NewsListViewModel{
     
     // MARK: Inner Types.
@@ -30,6 +29,7 @@ public class NewsListViewModel{
     // Public View properties.
     public let viewState: BehaviorSubject<ViewState> = BehaviorSubject(value: .initial)
     public let newsArticlesDataSource: BehaviorSubject<[NewsArticleUIModel]> = BehaviorSubject(value: [])
+    public let goToNewsDetailScreen: PublishSubject<NewsArticleUIModel> = PublishSubject()
     
     // Other propeties.
     fileprivate let getNewsArticleUseCase: GetNewsArticlesUseCase
@@ -49,6 +49,12 @@ public class NewsListViewModel{
         lFetchNewsArticles()
     }
     
+    public func onNewsArticleItemClicked(at index: Int){
+        if let newsArticles = try? newsArticlesDataSource.value(){
+            let newArticle = newsArticles[index]
+            goToNewsDetailScreen.onNext(newArticle)
+        }
+    }
 }
 
 // MARK: - Fetch NewsArticles.
@@ -57,17 +63,17 @@ extension NewsListViewModel{
     fileprivate func lFetchNewsArticles(){
         viewState.onNext(.loading)
         getNewsArticleUseCase.execute()
-                .map{ newsArticles in
-                    newsArticles.map{self.mapper.mapToUI(domain: $0)}
-                }
-                .subscribeOn(globalScheduler)
-                .observeOn(MainScheduler.instance)
-                .subscribe(onSuccess: { newsArticles in
-                    self.fetchNewsArticlesSuccess(newsArticles: newsArticles)
-                }, onError: { error in
-                    self.fetchNewsArticlesFailure(error: error)
-                })
-                .disposed(by: disposeBag)
+            .map{ newsArticles in
+                newsArticles.map{self.mapper.mapToUI(domain: $0)}
+            }
+            .subscribeOn(globalScheduler)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onSuccess: { newsArticles in
+                self.fetchNewsArticlesSuccess(newsArticles: newsArticles)
+            }, onError: { error in
+                self.fetchNewsArticlesFailure(error: error)
+            })
+            .disposed(by: disposeBag)
     }
     
     fileprivate func fetchNewsArticlesSuccess(newsArticles: [NewsArticleUIModel]){

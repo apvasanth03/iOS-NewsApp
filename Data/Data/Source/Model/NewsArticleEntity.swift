@@ -10,14 +10,14 @@ import Foundation
 
 public struct NewsArticleEntity{
     let title: String
-    let description: String
+    let description: String?
     let author: String?
     let source: String
     let publishedAt: Date
     let url: String
     let urlToImage: String?
     
-    public init(title: String, description: String, author: String?,
+    public init(title: String, description: String?, author: String?,
                 source: String, publishedAt: Date, url: String, urlToImage: String?){
         self.title = title
         self.description = description
