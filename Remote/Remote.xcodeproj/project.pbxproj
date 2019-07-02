@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186D14A1FFC3EF480B10E75E /* Pods_RemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB1FC4B9666ED3A8329921F /* Pods_RemoteTests.framework */; };
 		38E589C0ED6C7A98560F829B /* Pods_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C0C52B3149AFA1294D2E48 /* Pods_Remote.framework */; };
 		C3B626E82282BAC500392637 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B626E72282BAC500392637 /* Data.framework */; };
 		C3B627082282CF1C00392637 /* NewsArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B627072282CF1C00392637 /* NewsArticleModel.swift */; };
@@ -16,10 +17,27 @@
 		C3B627112282D08C00392637 /* NewsArticleModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B627102282D08C00392637 /* NewsArticleModelMapper.swift */; };
 		C3B627132282EE2000392637 /* HttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B627122282EE2000392637 /* HttpClient.framework */; };
 		C3B627152282EE4000392637 /* NewsArticleRemoteDataStoreImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B627142282EE4000392637 /* NewsArticleRemoteDataStoreImpl.swift */; };
+		C3D9AE2A22CBA37000780460 /* Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30CCE5F2282B6E8005552D7 /* Remote.framework */; };
+		C3D9AE3422CBA40B00780460 /* DataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9AE3322CBA40B00780460 /* DataFactory.swift */; };
+		C3D9AE3622CBA44D00780460 /* SourceModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9AE3522CBA44D00780460 /* SourceModelFactory.swift */; };
+		C3D9AE3822CBADB500780460 /* NewsArticleModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9AE3722CBADB500780460 /* NewsArticleModelFactory.swift */; };
+		C3D9AE3B22CBAEC100780460 /* NewsArticleResponseModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9AE3A22CBAEC100780460 /* NewsArticleResponseModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3D9AE2B22CBA37000780460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30CCE562282B6E8005552D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30CCE5E2282B6E8005552D7;
+			remoteInfo = Remote;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		15C0C52B3149AFA1294D2E48 /* Pods_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8E55FF291D04C5ED27F367 /* Pods-RemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-RemoteTests/Pods-RemoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		9AB1FC4B9666ED3A8329921F /* Pods_RemoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30CCE5F2282B6E8005552D7 /* Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30CCE632282B6E8005552D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B626E72282BAC500392637 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +48,13 @@
 		C3B627102282D08C00392637 /* NewsArticleModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleModelMapper.swift; sourceTree = "<group>"; };
 		C3B627122282EE2000392637 /* HttpClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HttpClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B627142282EE4000392637 /* NewsArticleRemoteDataStoreImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleRemoteDataStoreImpl.swift; sourceTree = "<group>"; };
+		C3D9AE2522CBA36F00780460 /* RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D9AE2922CBA37000780460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D9AE3322CBA40B00780460 /* DataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFactory.swift; sourceTree = "<group>"; };
+		C3D9AE3522CBA44D00780460 /* SourceModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModelFactory.swift; sourceTree = "<group>"; };
+		C3D9AE3722CBADB500780460 /* NewsArticleModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleModelFactory.swift; sourceTree = "<group>"; };
+		C3D9AE3A22CBAEC100780460 /* NewsArticleResponseModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleResponseModelTests.swift; sourceTree = "<group>"; };
+		C4D612DFB35D020E9EB66D6B /* Pods-RemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-RemoteTests/Pods-RemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D63F58A6396CB13898592B31 /* Pods-Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Remote/Pods-Remote.release.xcconfig"; sourceTree = "<group>"; };
 		D8A58905715EA7F778186518 /* Pods-Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Remote/Pods-Remote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +70,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3D9AE2222CBA36F00780460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D9AE2A22CBA37000780460 /* Remote.framework in Frameworks */,
+				186D14A1FFC3EF480B10E75E /* Pods_RemoteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +87,8 @@
 			children = (
 				D8A58905715EA7F778186518 /* Pods-Remote.debug.xcconfig */,
 				D63F58A6396CB13898592B31 /* Pods-Remote.release.xcconfig */,
+				C4D612DFB35D020E9EB66D6B /* Pods-RemoteTests.debug.xcconfig */,
+				3F8E55FF291D04C5ED27F367 /* Pods-RemoteTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -61,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				C30CCE612282B6E8005552D7 /* Remote */,
+				C3D9AE2622CBA37000780460 /* RemoteTests */,
 				C30CCE602282B6E8005552D7 /* Products */,
 				09CE3558CF126DB01F6E47E1 /* Pods */,
 				C3E5E3F9D745FD1DCFB8188E /* Frameworks */,
@@ -71,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				C30CCE5F2282B6E8005552D7 /* Remote.framework */,
+				C3D9AE2522CBA36F00780460 /* RemoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,12 +151,57 @@
 			path = Mapper;
 			sourceTree = "<group>";
 		};
+		C3D9AE2622CBA37000780460 /* RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9AE3022CBA3E700780460 /* Source */,
+				C3D9AE2922CBA37000780460 /* Info.plist */,
+			);
+			path = RemoteTests;
+			sourceTree = "<group>";
+		};
+		C3D9AE3022CBA3E700780460 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9AE3922CBAE9E00780460 /* mapper */,
+				C3D9AE3122CBA3F200780460 /* test */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C3D9AE3122CBA3F200780460 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9AE3222CBA3FA00780460 /* factory */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		C3D9AE3222CBA3FA00780460 /* factory */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9AE3322CBA40B00780460 /* DataFactory.swift */,
+				C3D9AE3522CBA44D00780460 /* SourceModelFactory.swift */,
+				C3D9AE3722CBADB500780460 /* NewsArticleModelFactory.swift */,
+			);
+			path = factory;
+			sourceTree = "<group>";
+		};
+		C3D9AE3922CBAE9E00780460 /* mapper */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9AE3A22CBAEC100780460 /* NewsArticleResponseModelTests.swift */,
+			);
+			path = mapper;
+			sourceTree = "<group>";
+		};
 		C3E5E3F9D745FD1DCFB8188E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C3B627122282EE2000392637 /* HttpClient.framework */,
 				C3B626E72282BAC500392637 /* Data.framework */,
 				15C0C52B3149AFA1294D2E48 /* Pods_Remote.framework */,
+				9AB1FC4B9666ED3A8329921F /* Pods_RemoteTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,18 +238,42 @@
 			productReference = C30CCE5F2282B6E8005552D7 /* Remote.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C3D9AE2422CBA36F00780460 /* RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D9AE2F22CBA37000780460 /* Build configuration list for PBXNativeTarget "RemoteTests" */;
+			buildPhases = (
+				2F509C7FB79A0F2057A6D8CC /* [CP] Check Pods Manifest.lock */,
+				C3D9AE2122CBA36F00780460 /* Sources */,
+				C3D9AE2222CBA36F00780460 /* Frameworks */,
+				C3D9AE2322CBA36F00780460 /* Resources */,
+				0C894D6DE8D9D1152138CAEB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3D9AE2C22CBA37000780460 /* PBXTargetDependency */,
+			);
+			name = RemoteTests;
+			productName = RemoteTests;
+			productReference = C3D9AE2522CBA36F00780460 /* RemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C30CCE562282B6E8005552D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Vasanthakumar Annadurai";
 				TargetAttributes = {
 					C30CCE5E2282B6E8005552D7 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+					};
+					C3D9AE2422CBA36F00780460 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -183,6 +290,7 @@
 			projectRoot = "";
 			targets = (
 				C30CCE5E2282B6E8005552D7 /* Remote */,
+				C3D9AE2422CBA36F00780460 /* RemoteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,9 +303,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3D9AE2322CBA36F00780460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C894D6DE8D9D1152138CAEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-RemoteTests/Pods-RemoteTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-RemoteTests/Pods-RemoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F509C7FB79A0F2057A6D8CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C37DD95ED2872E1C36490DCC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,7 +401,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3D9AE2122CBA36F00780460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D9AE3622CBA44D00780460 /* SourceModelFactory.swift in Sources */,
+				C3D9AE3422CBA40B00780460 /* DataFactory.swift in Sources */,
+				C3D9AE3B22CBAEC100780460 /* NewsArticleResponseModelTests.swift in Sources */,
+				C3D9AE3822CBADB500780460 /* NewsArticleModelFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3D9AE2C22CBA37000780460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30CCE5E2282B6E8005552D7 /* Remote */;
+			targetProxy = C3D9AE2B22CBA37000780460 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C30CCE652282B6E8005552D7 /* Debug */ = {
@@ -418,6 +602,46 @@
 			};
 			name = Release;
 		};
+		C3D9AE2D22CBA37000780460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4D612DFB35D020E9EB66D6B /* Pods-RemoteTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY7Y76UJ2F;
+				INFOPLIST_FILE = RemoteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vasanth.RemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3D9AE2E22CBA37000780460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F8E55FF291D04C5ED27F367 /* Pods-RemoteTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY7Y76UJ2F;
+				INFOPLIST_FILE = RemoteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vasanth.RemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,6 +659,15 @@
 			buildConfigurations = (
 				C30CCE682282B6E8005552D7 /* Debug */,
 				C30CCE692282B6E8005552D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D9AE2F22CBA37000780460 /* Build configuration list for PBXNativeTarget "RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D9AE2D22CBA37000780460 /* Debug */,
+				C3D9AE2E22CBA37000780460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

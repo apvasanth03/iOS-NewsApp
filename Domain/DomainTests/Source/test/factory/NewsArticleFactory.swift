@@ -10,7 +10,7 @@ import Foundation
 import Domain
 
 /**
- Class generated test data for NewsArticle.
+ Factory generates NewsArticle with random data.
  */
 class NewsArticleFactory{
     

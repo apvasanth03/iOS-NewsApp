@@ -49,6 +49,11 @@ end
 target 'Remote' do
     project 'Remote/Remote.xcodeproj'
     commonPods
+    
+    target 'RemoteTests' do
+        inherit! :search_paths
+        commonTestPods
+    end
 end
 
 # Presentation
