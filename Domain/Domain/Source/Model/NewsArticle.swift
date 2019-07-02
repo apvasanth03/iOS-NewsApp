@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct NewsArticle {
+public struct NewsArticle: Equatable {
     public let title: String
     public let description: String?
     public let author: String?

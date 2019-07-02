@@ -1,31 +1,45 @@
 PODS:
+  - Cuckoo (1.0.6)
+  - RxBlocking (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
   - RxCocoa (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
+  - RxTest (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
   - SDWebImage (5.0.6):
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
   - Swinject (2.6.2)
 
 DEPENDENCIES:
+  - Cuckoo (~> 1.0)
+  - RxBlocking (~> 4.0)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
+  - RxTest (~> 4.0)
   - SDWebImage (~> 5.0)
   - Swinject (~> 2.6)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Cuckoo
+    - RxBlocking
     - RxCocoa
     - RxSwift
+    - RxTest
     - SDWebImage
     - Swinject
 
 SPEC CHECKSUMS:
+  Cuckoo: 8074fc309159c4862665b83798f5ad03e061e8bd
+  RxBlocking: 79413e4d916f44bb3e113c5b2cc059e36fe58910
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  RxTest: 3ccb66bfbace0bf7df1c43a7c75d046f8ce60372
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
 
-PODFILE CHECKSUM: 581d3badea4435c05c0d6dfde9abe47569d9ba25
+PODFILE CHECKSUM: 6a8d6b060227d706468b11facc84a748f34075dd
 
 COCOAPODS: 1.5.3

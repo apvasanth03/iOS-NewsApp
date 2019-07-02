@@ -9,6 +9,12 @@ def commonPods
     pod 'RxSwift',    '~> 4.0'
 end
 
+def commonTestPods
+    pod 'RxTest', '~> 4.0'
+    pod 'RxBlocking', '~> 4.0'
+    pod 'Cuckoo', '~> 1.0'
+end
+
 # Targets
 
 # App
@@ -26,6 +32,11 @@ end
 target 'Domain' do
     project 'Domain/Domain.xcodeproj'
     commonPods
+    
+    target 'DomainTests' do
+        inherit! :search_paths
+        commonTestPods
+    end
 end
 
 # Data
