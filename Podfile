@@ -43,6 +43,11 @@ end
 target 'Data' do
     project 'Data/Data.xcodeproj'
     commonPods
+    
+    target 'DataTests' do
+        inherit! :search_paths
+        commonTestPods
+    end
 end
 
 # Remote

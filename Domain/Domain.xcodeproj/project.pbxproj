@@ -234,7 +234,7 @@
 			buildConfigurationList = C3961FD822CA5A7F00514EC4 /* Build configuration list for PBXNativeTarget "DomainTests" */;
 			buildPhases = (
 				CFDCB747BA530A9117B00417 /* [CP] Check Pods Manifest.lock */,
-				C3D9AE1422CB6E0200780460 /* ShellScript */,
+				C3D9AE1422CB6E0200780460 /* Run Script - Cuckoo */,
 				C3961FCA22CA5A7E00514EC4 /* Sources */,
 				C3961FCB22CA5A7E00514EC4 /* Frameworks */,
 				C3961FCC22CA5A7E00514EC4 /* Resources */,
@@ -333,7 +333,7 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-DomainTests/Pods-DomainTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C3D9AE1422CB6E0200780460 /* ShellScript */ = {
+		C3D9AE1422CB6E0200780460 /* Run Script - Cuckoo */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,6 +343,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Domain/Source/Repository/NewsArticlesRepository.swift",
 			);
+			name = "Run Script - Cuckoo";
 			outputFileListPaths = (
 			);
 			outputPaths = (

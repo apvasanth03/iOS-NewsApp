@@ -12,9 +12,9 @@ import XCTest
 @testable import Data
 
 /**
- A Class containes Test cases for NewsArticleResponseModel class.
+ A Class containes Test cases for NewsArticleModelMapper class.
  */
-class NewsArticleResponseModelTests: XCTestCase{
+class NewsArticleModelMapperTests: XCTestCase{
     
     // MARK: - Properties.
     fileprivate var newsArticleModelMapper: NewsArticleModelMapper!

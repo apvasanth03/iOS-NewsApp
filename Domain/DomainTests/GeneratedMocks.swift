@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Domain/Source/Repository/NewsArticlesRepository.swift at 2019-07-02 12:38:35 +0000
+// MARK: - Mocks generated from file: Domain/Source/Repository/NewsArticlesRepository.swift at 2019-07-03 12:44:03 +0000
 
 //
 //  NewsArticlesRepository.swift
