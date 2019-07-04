@@ -37,6 +37,8 @@
 		C3961FC322CA295400514EC4 /* DataAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3961FC222CA295400514EC4 /* DataAssembly.swift */; };
 		C3961FC522CA2AEB00514EC4 /* DomainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3961FC422CA2AEB00514EC4 /* DomainAssembly.swift */; };
 		C3961FC922CA2EC800514EC4 /* NewsListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3961FC822CA2EC800514EC4 /* NewsListAssembly.swift */; };
+		C3F6642922CE1BCA00AA0F64 /* AppSchedulerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6642822CE1BCA00AA0F64 /* AppSchedulerProvider.swift */; };
+		C3F6642E22CE1D3E00AA0F64 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6642D22CE1D3E00AA0F64 /* AppAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +88,8 @@
 		C3961FC222CA295400514EC4 /* DataAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAssembly.swift; sourceTree = "<group>"; };
 		C3961FC422CA2AEB00514EC4 /* DomainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAssembly.swift; sourceTree = "<group>"; };
 		C3961FC822CA2EC800514EC4 /* NewsListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListAssembly.swift; sourceTree = "<group>"; };
+		C3F6642822CE1BCA00AA0F64 /* AppSchedulerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSchedulerProvider.swift; sourceTree = "<group>"; };
+		C3F6642D22CE1D3E00AA0F64 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		F145FE22562F3D5B82A511BD /* Pods-NewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,8 +199,8 @@
 		C352B7E122C5136B0039F2CB /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				C352B7E222C513C40039F2CB /* String+Helper.swift */,
-				C376B92422C6118B002343C6 /* UIColor+Helper.swift */,
+				C3F6642722CE1AF700AA0F64 /* Extension */,
+				C3F6642822CE1BCA00AA0F64 /* AppSchedulerProvider.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -273,6 +277,7 @@
 				C3961FC022CA27E100514EC4 /* RemoteAssembly.swift */,
 				C3961FC222CA295400514EC4 /* DataAssembly.swift */,
 				C3961FC422CA2AEB00514EC4 /* DomainAssembly.swift */,
+				C3F6642D22CE1D3E00AA0F64 /* AppAssembly.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -283,6 +288,15 @@
 				C3961FC822CA2EC800514EC4 /* NewsListAssembly.swift */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		C3F6642722CE1AF700AA0F64 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C352B7E222C513C40039F2CB /* String+Helper.swift */,
+				C376B92422C6118B002343C6 /* UIColor+Helper.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +431,7 @@
 			files = (
 				C38AC88D22805CD70059EE5B /* NewsListViewController.swift in Sources */,
 				C352B7C222C4A10D0039F2CB /* ErrorView.swift in Sources */,
+				C3F6642922CE1BCA00AA0F64 /* AppSchedulerProvider.swift in Sources */,
 				C376B92C22C6178F002343C6 /* Font.swift in Sources */,
 				C3961FC122CA27E100514EC4 /* RemoteAssembly.swift in Sources */,
 				C376B92822C61262002343C6 /* Color.swift in Sources */,
@@ -426,6 +441,7 @@
 				C3961FC322CA295400514EC4 /* DataAssembly.swift in Sources */,
 				C3961FC922CA2EC800514EC4 /* NewsListAssembly.swift in Sources */,
 				C38AC88B22805CD70059EE5B /* AppDelegate.swift in Sources */,
+				C3F6642E22CE1D3E00AA0F64 /* AppAssembly.swift in Sources */,
 				C352B7E322C513C40039F2CB /* String+Helper.swift in Sources */,
 				C376B92522C6118B002343C6 /* UIColor+Helper.swift in Sources */,
 			);

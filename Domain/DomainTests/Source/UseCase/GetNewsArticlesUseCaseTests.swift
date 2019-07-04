@@ -8,7 +8,7 @@
 
 import Foundation
 import XCTest
-import Domain
+@testable import Domain
 import Cuckoo
 import RxSwift
 import RxBlocking

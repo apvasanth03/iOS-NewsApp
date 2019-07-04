@@ -34,14 +34,14 @@ public class NewsListViewModel{
     // Other propeties.
     fileprivate let getNewsArticleUseCase: GetNewsArticlesUseCase
     fileprivate let mapper: NewsArticleUIMapper
-    fileprivate lazy var globalScheduler = ConcurrentDispatchQueueScheduler(queue:
-        DispatchQueue.global())
+    fileprivate let schedulerProvider: SchedulerProvider
     fileprivate let disposeBag = DisposeBag()
     
     // MARK: Init.
-    public init(getNewsArticleUseCase: GetNewsArticlesUseCase, mapper: NewsArticleUIMapper){
+    public init(getNewsArticleUseCase: GetNewsArticlesUseCase, mapper: NewsArticleUIMapper, schedulerProvider: SchedulerProvider){
         self.getNewsArticleUseCase = getNewsArticleUseCase
         self.mapper = mapper
+        self.schedulerProvider = schedulerProvider
     }
     
     // MARK: Public View Methods.
@@ -66,8 +66,8 @@ extension NewsListViewModel{
             .map{ newsArticles in
                 newsArticles.map{self.mapper.mapToUI(domain: $0)}
             }
-            .subscribeOn(globalScheduler)
-            .observeOn(MainScheduler.instance)
+            .subscribeOn(schedulerProvider.backgroundScheduler())
+            .observeOn(schedulerProvider.uiScheduler())
             .subscribe(onSuccess: { newsArticles in
                 self.fetchNewsArticlesSuccess(newsArticles: newsArticles)
             }, onError: { error in

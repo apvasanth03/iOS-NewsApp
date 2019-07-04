@@ -25,8 +25,9 @@ class NewsListAssembly: Assembly{
         container.register(NewsListViewModel.self){ r in
             let getNewsArticleUseCase = r.resolve(GetNewsArticlesUseCase.self)!
             let mapper = r.resolve(NewsArticleUIMapper.self)!
+            let schedulerProvider = r.resolve(SchedulerProvider.self)!
             
-            return NewsListViewModel(getNewsArticleUseCase: getNewsArticleUseCase, mapper: mapper)
+            return NewsListViewModel(getNewsArticleUseCase: getNewsArticleUseCase, mapper: mapper, schedulerProvider: schedulerProvider)
             }
             .inObjectScope(.container)
     }

@@ -1,16 +1,16 @@
 //
 //  NewsArticleFactory.swift
-//  DomainTests
+//  PresentationTests
 //
-//  Created by Vasanthakumar Annadurai on 02/07/19.
+//  Created by Vasanthakumar Annadurai on 03/07/19.
 //  Copyright © 2019 Vasanthakumar Annadurai. All rights reserved.
 //
 
 import Foundation
-import Domain
+@testable import Domain
 
 /**
- Factory generates NewsArticle with random data.
+ Factory generates "NewsArticle" with random data.
  */
 class NewsArticleFactory{
     

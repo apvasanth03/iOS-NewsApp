@@ -9,10 +9,11 @@
 import Foundation
 import RxSwift
 
-//
-// The useCase responsible for getting NewsArticles.
-//
-public class GetNewsArticlesUseCase {
+/**
+ 1. The useCase responsible for getting NewsArticles.
+ 2. open - We have made the class open because it needs to be extented in other module for unit testing (Mock using Cuckoo lib).
+ */
+open class GetNewsArticlesUseCase {
     
     // MARK: - Properties.
     private let newsArticlesRepository: NewsArticlesRepository
@@ -23,7 +24,7 @@ public class GetNewsArticlesUseCase {
     }
     
     // MARK: Public Methods.
-    public func execute() -> Single<[NewsArticle]>{
+    open func execute() -> Single<[NewsArticle]>{
         return newsArticlesRepository.getNewsArticles()
     }
     

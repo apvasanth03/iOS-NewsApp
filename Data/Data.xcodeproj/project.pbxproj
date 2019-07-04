@@ -171,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				C3DC54A122CCD6E700B0F84C /* Source */,
-				C3DC549B22CCD58F00B0F84C /* Test */,
 				C30DC21E22CCDF72004C376E /* GeneratedMocks.swift */,
 				C3DC549422CCCCCF00B0F84C /* Info.plist */,
 			);
@@ -200,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				C3DC54A222CCD6F000B0F84C /* Mapper */,
+				C3DC549B22CCD58F00B0F84C /* Test */,
 				C30DC21922CCDB8F004C376E /* NewsArticleDataRepositoryTests.swift */,
 			);
 			path = Source;

@@ -65,5 +65,10 @@ end
 target 'Presentation' do
     project 'Presentation/Presentation.xcodeproj'
     commonPods
+    
+    target 'PresentationTests' do
+        inherit! :search_paths
+        commonTestPods
+    end
 end
 

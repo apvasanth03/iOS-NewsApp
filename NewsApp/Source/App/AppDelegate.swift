@@ -30,8 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let remoteAssembly = RemoteAssembly()
         let dataAssembly = DataAssembly()
         let domainAssembly = DomainAssembly()
+        let appAssembly = AppAssembly()
         
-        let assembler = Assembler([httpClientAssembly, remoteAssembly, dataAssembly, domainAssembly])
+        let assembler = Assembler([httpClientAssembly, remoteAssembly, dataAssembly, domainAssembly, appAssembly])
         return assembler
     }
     

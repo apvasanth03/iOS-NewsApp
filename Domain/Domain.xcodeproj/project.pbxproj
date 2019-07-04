@@ -167,26 +167,26 @@
 			isa = PBXGroup;
 			children = (
 				C3D9AE1E22CB79FE00780460 /* UseCase */,
-				C3D9AE1822CB776C00780460 /* test */,
+				C3D9AE1822CB776C00780460 /* Test */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		C3D9AE1822CB776C00780460 /* test */ = {
+		C3D9AE1822CB776C00780460 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				C3D9AE1922CB777C00780460 /* factory */,
+				C3D9AE1922CB777C00780460 /* Factory */,
 			);
-			path = test;
+			path = Test;
 			sourceTree = "<group>";
 		};
-		C3D9AE1922CB777C00780460 /* factory */ = {
+		C3D9AE1922CB777C00780460 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
 				C3D9AE1A22CB778700780460 /* DataFactory.swift */,
 				C3D9AE1C22CB792200780460 /* NewsArticleFactory.swift */,
 			);
-			path = factory;
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		C3D9AE1E22CB79FE00780460 /* UseCase */ = {
