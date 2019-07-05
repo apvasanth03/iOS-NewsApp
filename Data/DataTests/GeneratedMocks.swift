@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Data/Source/Mapper/NewsArticleEntityMapper.swift at 2019-07-03 13:42:32 +0000
+// MARK: - Mocks generated from file: Data/Source/Mapper/NewsArticleEntityMapper.swift at 2019-07-05 06:48:44 +0000
 
 //
 //  NewsArticleEntityMapper.swift
@@ -105,7 +105,7 @@ public class NewsArticleEntityMapperStub: NewsArticleEntityMapper {
 }
 
 
-// MARK: - Mocks generated from file: Data/Source/Repository/NewsArticleRemoteDataStore.swift at 2019-07-03 13:42:32 +0000
+// MARK: - Mocks generated from file: Data/Source/Repository/NewsArticleRemoteDataStore.swift at 2019-07-05 06:48:44 +0000
 
 //
 //  NewsArticleRemoteDataStore.swift

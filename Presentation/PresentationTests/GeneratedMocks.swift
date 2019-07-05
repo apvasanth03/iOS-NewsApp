@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: ../Domain/Domain/Source/Repository/NewsArticlesRepository.swift at 2019-07-04 11:59:30 +0000
+// MARK: - Mocks generated from file: ../Domain/Domain/Source/Repository/NewsArticlesRepository.swift at 2019-07-05 06:48:45 +0000
 
 //
 //  NewsArticlesRepository.swift
@@ -105,7 +105,7 @@ public class NewsArticlesRepositoryStub: NewsArticlesRepository {
 }
 
 
-// MARK: - Mocks generated from file: ../Domain/Domain/Source/UseCase/GetNewsArticlesUseCase.swift at 2019-07-04 11:59:30 +0000
+// MARK: - Mocks generated from file: ../Domain/Domain/Source/UseCase/GetNewsArticlesUseCase.swift at 2019-07-05 06:48:45 +0000
 
 //
 //  GetNewsArticlesUseCase.swift
@@ -212,7 +212,7 @@ public class GetNewsArticlesUseCaseStub: GetNewsArticlesUseCase {
 }
 
 
-// MARK: - Mocks generated from file: Presentation/Source/Mapper/NewsArticleUIMapper.swift at 2019-07-04 11:59:30 +0000
+// MARK: - Mocks generated from file: Presentation/Source/Mapper/NewsArticleUIMapper.swift at 2019-07-05 06:48:45 +0000
 
 //
 //  NewsArticleUIMapper.swift

@@ -26,6 +26,11 @@ target 'NewsApp' do
     pod 'SDWebImage', '~> 5.0'
     pod 'Swinject',   '~> 2.6'
     
+    target 'NewsAppTests' do
+        inherit! :search_paths
+        commonTestPods
+    end
+    
 end
 
 # Domain
